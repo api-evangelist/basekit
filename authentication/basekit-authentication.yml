@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://apidocs.basekit.com/api/overview/
+docs: https://apidocs.basekit.com/api/overview/
+summary:
+  types:
+  - http
+  - oauth1
+  api_key_in: []
+  oauth2_flows: []
+  notes: >-
+    The BaseKit REST API recommends HTTP Basic authentication (username/password) for its
+    relative simplicity, and also supports OAuth 1.0. Requests must send a valid User-Agent
+    header; POST/PUT bodies are JSON (Content-Type application/json).
+schemes:
+- name: basicAuth
+  type: http
+  scheme: basic
+  recommended: true
+  description: HTTP Basic Auth with username and password credentials scoped to a brand.
+  source: https://apidocs.basekit.com/api/overview/
+- name: oauth1
+  type: oauth1
+  description: OAuth 1.0 is supported as an alternative to Basic Auth.
+  source: https://apidocs.basekit.com/api/overview/
+webhook_auth:
+  scheme: hmac-sha256
+  header: X-Delivery-Hmac-SHA256
+  description: >-
+    Outgoing webhooks carry an HMAC-SHA256 signature in the X-Delivery-Hmac-SHA256 header,
+    computed with a per-consumer HMAC secret, which the consumer can optionally validate.
+  source: https://apidocs.basekit.com/webhooks/
