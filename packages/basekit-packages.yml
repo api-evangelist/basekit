@@ -1,0 +1,45 @@
+generated: '2026-07-18'
+method: searched
+source: https://apidocs.basekit.com/api/ + Packagist + github.com/basekit
+packages:
+- language: php
+  registry: packagist
+  name: basekit/php-api-client
+  url: https://packagist.org/packages/basekit/php-api-client
+  install: composer require basekit/php-api-client
+  official: true
+  description: The official PHP client for BaseKit's REST API (latest 4.0.0, 2023-06-28).
+  source: https://github.com/basekit/php-api-client
+- language: php
+  registry: github
+  name: basekit/php-api-client-example
+  url: https://github.com/basekit/php-api-client-example
+  install: git clone https://github.com/basekit/php-api-client-example
+  official: true
+  description: Example scripts using the BaseKit PHP API client.
+- language: php
+  registry: packagist
+  name: basekit/site-construction-kit
+  url: https://packagist.org/packages/basekit/site-construction-kit
+  install: composer require basekit/site-construction-kit
+  official: true
+  deprecated: true
+  description: PHP classes to build BaseKit sites/pages/widgets. Marked abandoned on Packagist (last release 1.0.3, 2016).
+  source: https://github.com/basekit/site-construction-kit
+code_samples:
+- language: php
+  description: PHP with cURL and a PHP API client sample, published from the BaseKit Integration Center.
+  url: https://apidocs.basekit.com/api/
+- language: ruby
+  description: Ruby code sample for the BaseKit REST API.
+  url: https://apidocs.basekit.com/api/
+- language: dotnet
+  description: .NET code sample for the BaseKit REST API.
+  url: https://apidocs.basekit.com/api/
+- language: python
+  description: Python code sample for the BaseKit REST API.
+  url: https://apidocs.basekit.com/api/
+notes: >-
+  BaseKit publishes an official PHP API client (basekit/php-api-client) plus code samples
+  in PHP, Ruby, .NET and Python from its Integration Center. No official npm/PyPI/NuGet/RubyGems
+  first-party package was found beyond the PHP client on 2026-07-18.

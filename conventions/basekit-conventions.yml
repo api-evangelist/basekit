@@ -1,0 +1,42 @@
+generated: '2026-07-18'
+method: searched
+source: https://apidocs.basekit.com/api/overview/
+docs: https://apidocs.basekit.com/api/overview/
+authentication:
+  style: HTTP Basic (recommended) or OAuth 1.0
+  ref: authentication/basekit-authentication.yml
+request:
+  content_type: application/json
+  body_encoding: POST and PUT parameters must be encoded as JSON.
+  required_headers:
+  - name: User-Agent
+    note: A valid User-Agent header must be provided on every request.
+  - name: Content-Type
+    note: application/json for POST/PUT operations.
+base_url:
+  root: http://rest.brand-domain.tld
+  note: >-
+    The API root is brand-templated (rest.<brand-domain>.tld); HTTPS is strongly recommended
+    where the environment is configured for it. Resource references use *Ref identifiers
+    (brandRef, userRef, siteRef, domainRef).
+identifiers:
+  style: opaque reference strings
+  examples:
+  - brandRef
+  - userRef
+  - siteRef
+  - domainRef
+error_envelope:
+  note: >-
+    Sending invalid data results in a 400 Bad Request. A dedicated machine-readable problem
+    schema (RFC 9457) was not documented on 2026-07-18.
+webhooks:
+  ref: asyncapi/basekit-webhooks.yml
+  signature_header: X-Delivery-Hmac-SHA256
+idempotency:
+  supported: false
+  note: No idempotency-key header or idempotent-retry contract is documented.
+pagination:
+  documented: false
+versioning:
+  ref: lifecycle/basekit-lifecycle.yml

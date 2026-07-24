@@ -1,0 +1,41 @@
+# BaseKit
+
+> BaseKit is a white-label SaaS platform that lets partners (web hosts, telcos, banks, SaaS companies and resellers) offer website building, e-commerce and bookings to small businesses. Its products are BaseKit Site (website builder), BaseKit Store (e-commerce) and BaseKit Bookings. Partners provision and manage end users through the BaseKit REST API, serving 60+ partners across 40 markets.
+
+## APIs
+
+- [BaseKit REST API](https://apidocs.basekit.com/api/): Partner-facing REST API to provision brands, users, packages, sites, domains and SSL certificates, plus webhook subscriptions.
+
+## Docs
+
+- [Integration Center](https://apidocs.basekit.com/): Developer portal for the REST API, cPanel, Plesk, WHMCS and webhooks integrations.
+- [Using the API / overview](https://apidocs.basekit.com/api/overview/): Authentication, errors, versioning and common problems.
+- [Integration Guide](https://apidocs.basekit.com/api/integration-guide/): Key concepts (brands, users, packages, sites, domains) and the user lifecycle.
+- [API Reference (Stoplight)](https://basekit.stoplight.io/docs/basekit): Method reference with example requests and responses.
+- [Webhooks](https://apidocs.basekit.com/webhooks/): Event subscriptions signed with HMAC-SHA256 (X-Delivery-Hmac-SHA256).
+
+## Auth
+
+- HTTP Basic authentication (recommended) or OAuth 1.0. A valid User-Agent header is required; POST/PUT bodies are JSON.
+
+## SDKs
+
+- [PHP API Client](https://packagist.org/packages/basekit/php-api-client): Official PHP client — composer require basekit/php-api-client.
+- Code samples in PHP, Ruby, .NET and Python from the Integration Center.
+
+## Artifacts
+
+- [Authentication](authentication/basekit-authentication.yml)
+- [Conventions](conventions/basekit-conventions.yml)
+- [Webhooks](asyncapi/basekit-webhooks.yml)
+- [Data model](data-model/basekit-data-model.yml)
+- [Lifecycle](lifecycle/basekit-lifecycle.yml)
+- [Packages](packages/basekit-packages.yml)
+- [Conformance](conformance/basekit-conformance.yml)
+
+## Operational
+
+- [Status page](https://status.basekit.com)
+- [Blog](https://www.basekit.com/blog/)
+- [GitHub](https://github.com/basekit)
+- [Terms](https://www.basekit.com/terms/) · [Privacy](https://www.basekit.com/privacy/)

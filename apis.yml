@@ -1,7 +1,27 @@
 aid: basekit
 name: Basekit
-description: Basekit is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  BaseKit is a white-label SaaS platform that lets partners — web hosting companies, telcos,
+  banks, SaaS providers and resellers — offer website building, online stores and bookings to
+  small businesses under their own brand. Its products are BaseKit Site (website builder),
+  BaseKit Store (e-commerce) and BaseKit Bookings (appointment scheduling), deployed SaaS or
+  on-premise across 60+ partners in 40 markets. Partners provision and manage end users through
+  the BaseKit REST API, which exposes brands, users, packages, sites, domains, SSL certificates
+  and webhook subscriptions. BaseKit was surfaced as a Seedcamp portfolio company and enriched
+  from its public developer surface at apidocs.basekit.com.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://dqmeprwm.cdn.imgeng.in/wp-content/themes/basekit/assets/favicon/apple-touch-icon.png
 url: https://raw.githubusercontent.com/api-evangelist/basekit/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +31,88 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Website Builder
+- Web Hosting
+- E-Commerce
+- White Label
+- SaaS
+- Small Business
+- Website Migration
+- Reseller
+apis:
+- name: BaseKit REST API
+  description: >-
+    Partner-facing REST API to provision and manage brands, users, packages, sites, custom
+    domains, SSL certificates and webhook subscriptions on the BaseKit platform. HTTP Basic
+    auth (recommended) or OAuth 1.0; JSON request/response.
+  humanURL: https://apidocs.basekit.com/api/
+  baseURL: https://rest.basekit.com
+  tags:
+  - Website Builder
+  - Provisioning
+  - White Label
+  properties:
+  - type: Documentation
+    url: https://apidocs.basekit.com/api/
+  - type: APIReference
+    url: https://basekit.stoplight.io/docs/basekit
+  - type: GettingStarted
+    url: https://apidocs.basekit.com/api/integration-guide/
+  - type: Authentication
+    url: authentication/basekit-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DeveloperPortal
+  url: https://apidocs.basekit.com/
+- type: Documentation
+  url: https://apidocs.basekit.com/api/
+- type: APIReference
+  url: https://basekit.stoplight.io/docs/basekit
+- type: GettingStarted
+  url: https://apidocs.basekit.com/api/integration-guide/
+- type: Blog
+  url: https://www.basekit.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/basekit
+- type: StatusPage
+  url: https://status.basekit.com
+- type: SignUp
+  url: https://reseller.basekit.com/
+- type: TermsOfService
+  url: https://www.basekit.com/terms/
+- type: PrivacyPolicy
+  url: https://www.basekit.com/privacy/
+- type: Authentication
+  url: authentication/basekit-authentication.yml
+- type: Conventions
+  url: conventions/basekit-conventions.yml
+- type: Lifecycle
+  url: lifecycle/basekit-lifecycle.yml
+- type: Webhooks
+  url: asyncapi/basekit-webhooks.yml
+- type: DataModel
+  url: data-model/basekit-data-model.yml
+- type: Conformance
+  url: conformance/basekit-conformance.yml
+- type: Packages
+  url: packages/basekit-packages.yml
+- type: SDKs
+  url: packages/basekit-packages.yml
+- type: LLMsTxt
+  url: llms/basekit-llms.txt
+- type: DomainSecurity
+  url: security/basekit-domain-security.yml
 - type: Website
-  url: http://basekit.com
+  url: https://www.basekit.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

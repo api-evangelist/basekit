@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: probed
+source: live probes 2026-07-18
+hosts:
+- host: https://apidocs.basekit.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://www.basekit.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://rest.basekit.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 403
+notes: >-
+  No /.well-known discovery documents were served (security.txt 404 on docs and www;
+  openid-configuration 403 on the API host). Recorded for auditability; no WellKnown or
+  SecurityTxt pointer is wired because nothing was actually present.

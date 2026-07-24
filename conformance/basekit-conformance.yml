@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: derived
+source: https://apidocs.basekit.com/api/ + https://apidocs.basekit.com/webhooks/
+note: Derived from documented BaseKit auth, transport and webhook conventions (no OpenAPI published).
+standards:
+- id: http-basic-auth
+  conforms: true
+  evidence: HTTP Basic authentication is the recommended auth scheme (api overview).
+- id: oauth1
+  conforms: true
+  evidence: OAuth 1.0 is documented as a supported authentication scheme.
+- id: oauth2
+  conforms: false
+- id: openid-connect
+  conforms: false
+- id: webhooks-hmac-sha256
+  conforms: true
+  evidence: Outgoing webhooks are signed with HMAC-SHA256 (X-Delivery-Hmac-SHA256 header).
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Errors documented only as 400 Bad Request; no application/problem+json schema published.
+- id: json-request-response
+  conforms: true
+  evidence: POST/PUT bodies encoded as JSON with Content-Type application/json.

@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://apidocs.basekit.com/webhooks/
+spec_type: Webhooks
+summary: >-
+  BaseKit exposes webhooks as an extension to its REST API. A consumer creates a subscription
+  (via the Create Subscription endpoint) by selecting an event and providing a destination URL;
+  for each matching platform event BaseKit POSTs the associated payload to that URL.
+delivery:
+  method: HTTP POST
+  signature:
+    scheme: hmac-sha256
+    header: X-Delivery-Hmac-SHA256
+    note: >-
+      All outgoing webhooks include an HMAC-SHA256 signature in the X-Delivery-Hmac-SHA256
+      header, computed with a per-consumer HMAC secret that the consumer can request and
+      optionally validate.
+subscription:
+  management: REST API extension
+  create_endpoint: Create Subscription Endpoint
+  docs: https://apidocs.basekit.com/webhooks/
+events:
+- name: site.published
+  description: >-
+    Documented example event fired when a customer publishes their site. The full event
+    catalogue and per-event example payloads are published in the webhooks API Reference.
+  documented: true
+notes: >-
+  The webhooks API Reference includes example payloads for each event. No AsyncAPI document
+  is published; this artifact captures the documented webhook surface (type Webhooks).

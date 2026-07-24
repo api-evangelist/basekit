@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://apidocs.basekit.com/api/ + https://status.basekit.com
+versioning:
+  scheme: documented
+  docs: https://apidocs.basekit.com/api/overview/
+  note: >-
+    The API overview documents how the API is versioned; a concrete current version string
+    was not surfaced publicly on 2026-07-18.
+status_page: https://status.basekit.com
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: >-
+    No formal RFC 8594 Sunset/Deprecation-header policy was found. The legacy
+    basekit/site-construction-kit package is marked abandoned on Packagist, but that is a
+    package-level status, not an API deprecation policy.
+sla:
+  url: null
+support:
+  technical: integrations@basekit.com
+  commercial: partners@basekit.com

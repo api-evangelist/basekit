@@ -1,0 +1,59 @@
+generated: '2026-07-18'
+method: searched
+source: https://apidocs.basekit.com/api/integration-guide/
+note: >-
+  Entity-relationship model derived from BaseKit's documented Integration Guide key concepts
+  (no OpenAPI schema is published, so this is grounded in the prose object model and the
+  documented *Ref identifiers and endpoints).
+entities:
+- name: Brand
+  id_field: brandRef
+  description: The configuration of a partner within BaseKit; a secure data partition. Users belong to exactly one brand.
+- name: User
+  id_field: userRef
+  aka:
+  - Account Holder
+  description: An individual account created within a brand; holds exactly one package at a time.
+- name: Package
+  description: >-
+    Defines the features available to a user (site limits, template access, storage). Types
+    include Suspension (default), Trial, Freemium and Premium.
+- name: Site
+  id_field: siteRef
+  description: An individual website created by a user; users may create multiple sites subject to package publishing limits.
+- name: Domain
+  id_field: domainRef
+  description: A custom domain mapped to a site. Sites also receive an automatic subdomain (subdomain.brand.com).
+- name: BillingCycle
+  description: Subscription payment frequency in months (1 monthly, 12 annual).
+relationships:
+- from: User
+  to: Brand
+  type: belongs_to
+  via: brandRef
+- from: Site
+  to: User
+  type: belongs_to
+  via: userRef
+- from: User
+  to: Site
+  type: has_many
+- from: Domain
+  to: Site
+  type: belongs_to
+  via: siteRef
+- from: Site
+  to: Domain
+  type: has_many
+- from: User
+  to: Package
+  type: has_one
+  via: account-packages
+endpoints_observed:
+- POST /users
+- POST /sites
+- POST /users/:userRef/auto-login
+- POST /sites/:siteRef/domains
+- DELETE /sites/:siteRef/domains/:domainRef
+- POST /users/:userRef/account-packages
+- PUT /ssl-certs/:domain
