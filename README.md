@@ -64,6 +64,99 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Basekit is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+BaseKit is a white-label SaaS platform that lets partners — web hosting companies, telcos, banks, SaaS providers and resellers — offer website building, online stores and bookings to small businesses under their own brand. Its products are BaseKit Site (website builder), BaseKit Store (e-commerce) and BaseKit Bookings (appointment scheduling), deployed SaaS or on-premise across 60+ partners in 40 markets. Partners provision and manage end users through the BaseKit REST API, which exposes brands, users, packages, sites, domains, SSL certificates and webhook subscriptions. BaseKit was surfaced as a Seedcamp portfolio company and enriched from its public developer surface at apidocs.basekit.com.
 
-Backed by: seedcamp — http://basekit.com
+**Areas:** Company · Website Builder · Web Hosting · E-Commerce · White Label · Software-as-a-Service · Small Business · Website Migration · Reseller
+
+## Basekit on APIs.io
+
+Everything profiled for Basekit is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/basekit/](https://apis.io/providers/basekit/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [BaseKit REST API](https://apis.io/apis/basekit/basekit-rest-api/) — Partner-facing REST API to provision and manage brands, users, packages, sites, custom domains, SSL certificates and webhook subscriptions on the BaseKit…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Basekit Webhooks](https://apis.io/asyncapis/basekit/basekit-webhooks/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Basekit Authentication](https://apis.io/security/basekit/basekit-authentication/)
+- [Basekit Domain Security](https://apis.io/security/basekit/basekit-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.basekit.com)
+- [Documentation](https://apidocs.basekit.com/api/)
+- [Getting started](https://apidocs.basekit.com/api/integration-guide/)
+- [API reference](https://basekit.stoplight.io/docs/basekit)
+- [Sign up](https://reseller.basekit.com/)
+- [Blog](https://www.basekit.com/blog/)
+- [Terms of service](https://www.basekit.com/terms/)
+- [Privacy policy](https://www.basekit.com/privacy/)
+- [GitHub](https://github.com/basekit)
+- [Status](https://status.basekit.com)
+
+## API Evangelist rating
+
+**Kin Score 38.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 52.4 |
+| Access clarity | 34.2 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/basekit/](https://apis.io/providers/basekit/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Basekit: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/basekit/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
